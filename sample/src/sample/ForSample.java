@@ -3,10 +3,13 @@ package sample;
 public class ForSample {
 
     public static void main(String[] args) {
-        for (var i = 1; i <= 10; i++) {
-            System.out.println(i);
+        var numbers = new int[] {1,2,3,4,5};
+        
+        for (var number : numbers) {
+            System.out.println(number);
+            
+        }
+    }
+    
         }
 
-    }
-
-}
