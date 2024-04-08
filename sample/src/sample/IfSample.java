@@ -1,19 +1,22 @@
 package sample;
 
-public class IfSample {
+public class NestedIfExample {
 
     public static void main(String[] args) {
+        int number = 30;
         
-        var score = 100;//成績
-        
-        if(score == 100 ) {
-            System.out.println("満点です！");
-        }else if (score >= 80){
-        System.out.println("よくできました！");
-        }else if (score >= 60) {
-            System.out.println("合格です！");
-        }else {
-            System.out.println("赤点です、、、");
+        if (number >= 20) {
+            System.out.println("20以上");
+            
+            if (number < 40) {
+                System.out.println("20以上40未満");
+                
+                if(number == 30) {
+                    System.out.println("ちょうど30");
+                }
+            }
+            
+            
         }
 
     }
